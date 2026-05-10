@@ -23,14 +23,3 @@ Standard Large Language Models (LLMs) often lack up-to-date, highly specific tec
 * **Evaluation:** RAGAS & DeepEval
 
 ---
-
-## 🚀 Getting Started
-
-### Prerequisites
-Make sure you have Python 3.10+ installed. It is highly recommended to use a virtual environment.
-
-### Installation
-1. Clone this repository:
-   ```bash
-   git clone <your-repo-link-here>
-   cd <your-repo-name>
