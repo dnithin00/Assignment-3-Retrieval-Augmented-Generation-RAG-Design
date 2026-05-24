@@ -1,0 +1,328 @@
+User Query,Retrieved Passages (Top-3),Guideline Output (Model Answer),Context Relevance (Precision),Context Recall,Faithfulness,Answer Relevance
+How do I prevent lateral movement if a remote worker's laptop is compromised?,"collection of resources once on the internal network. As a result, unauthorized lateral movement 
+within the environment has been one of the biggest challenges for federal agencies.  
+The Trusted Internet Connections (TIC) and agency perimeter firewalls provide strong internet 
+gateways. This helps block attackers from the internet, but the TICs and perimeter firewalls are 
+less useful for detecting and blocking attacks from inside the network and cannot protect subjects 
+outside of the enterprise perimeter (e.g., remote workers, cloud-based services, edge devices, 
+etc.).
+
+---
+
+Discussion:  Monitoring and control of remote access methods allows organizations to 
+detect attacks and help ensure compliance with remote access policies by auditing the 
+connection activities of remote users on a variety of system components, including servers,
+
+---
+
+multiple servers, computers, and peripherals. Lockable physical casings can be used in 
+conjunction with cable locks or lockdown plates to prevent the theft of the locked casing 
+containing the computer equipment. 
+Related Controls:  None. 
+(5) PHYSICAL ACCESS CONTROL | TAMPER PROTECTION  
+Employ [Assignment: organization-defined anti-tamper technologies] to [Selection (one or 
+more): detect; prevent] physical tampering or alteration of [Assignment: organization-
+defined hardware components] within the system.","Based on the provided context and graph facts, it appears that the main challenge is preventing lateral movement within the environment, particularly when a remote worker's laptop is compromised.
+
+To address this concern, I would recommend implementing controls that focus on monitoring and controlling remote access methods. This includes:
+
+1. Implementing robust authentication, authorization, and accounting (AAA) mechanisms to ensure secure remote access to the organization's resources.
+2. Utilizing Network Access Control (NAC) solutions to enforce strict access controls, such as multi-factor authentication, device profiling, and policy-based access control.
+3. Implementing endpoint security measures, such as encryption, antivirus software, and intrusion detection systems, to detect and respond to potential threats on remote worker laptops.
+4. Conducting regular vulnerability assessments and penetration testing to identify weaknesses in the remote access infrastructure and remediate them promptly.
+5. Implementing incident response plans and procedures to quickly respond to suspected compromises and minimize the impact of an attack.
+
+Additionally, considering the discussion about physical access control, it might be beneficial to employ lockable physical casings with cable locks or lockdown plates to prevent the theft of the locked casing containing the computer equipment.
+
+Please note that these recommendations are based solely on the provided context and graph facts, and may not cover all possible scenarios or requirements. It is essential to consult with relevant stakeholders and conduct thorough risk assessments before implementing any security controls.",0.0,1.0,0.3,0.9235540677066632
+What is the purpose of a Trusted Internet Connection (TIC)?,"6.4 ZTA and Trusted Internet Connections 3.0 
+TIC is a federal cybersecurity initiative jointly managed by OMB, DHS, and the General 
+Services Administration (GSA), and is intended to establish a network security baseline across 
+the Federal Government. Historically, TIC was a perimeter-based cybersecurity strategy which 
+required agencies to consolidate and monitor their external network connections. Inherent in TIC 
+1.0 and TIC 2.0 is the assumption that the inside of the perimeter is “trusted,” whereas ZTA
+
+---
+
+collection of resources once on the internal network. As a result, unauthorized lateral movement 
+within the environment has been one of the biggest challenges for federal agencies.  
+The Trusted Internet Connections (TIC) and agency perimeter firewalls provide strong internet 
+gateways. This helps block attackers from the internet, but the TICs and perimeter firewalls are 
+less useful for detecting and blocking attacks from inside the network and cannot protect subjects 
+outside of the enterprise perimeter (e.g., remote workers, cloud-based services, edge devices, 
+etc.).
+
+---
+
+Discussion:  Limiting the number of external network connections facilitates monitoring of 
+inbound and outbound communications traffic. The Trusted Internet Connection [DHS TIC] 
+initiative is an example of a federal guideline that requires limits on the number of external 
+network connections. Limiting the number of external network connections to the system is  
+important during transition periods from older to newer technologies (e.g., transitioning 
+from IPv4 to IPv6 network protocols). Such transitions may require implementing the older","According to the provided context, the purpose of a Trusted Internet Connection (TIC) is to establish a network security baseline across the Federal Government. Specifically, it is a federal cybersecurity initiative jointly managed by OMB, DHS, and the GSA, aimed at limiting the number of external network connections and facilitating monitoring of inbound and outbound communications traffic.",0.8333333332916666,1.0,1.0,0.9999999999998911
+How does Zero Trust Architecture treat internal versus external networks?,"compute resources and applications/services) to only those subjects and assets identified as 
+needing access as well as continually authenticating and authorizing the identity and security 
+posture of each access request. 
+A zero trust architecture (ZTA) is an enterprise cybersecurity architecture that is based on zero 
+trust principles and designed to prevent data breaches and limit internal lateral movement. This 
+publication discusses ZTA, its logical components, possible deployment scenarios, and threats. It
+
+---
+
+outside of the enterprise perimeter (e.g., remote workers, cloud-based services, edge devices, 
+etc.).  
+An operative definition of zero trust and zero trust architecture is as follows: 
+Zero trust (ZT) provides a collection of concepts and ideas designed to minimize 
+uncertainty in enforcing accurate, least privilege per-request access decisions in 
+information systems and services in the face of a network viewed as compromised. Zero 
+trust architecture (ZTA) is an enterprise’s cybersecurity plan that utilizes zero trust
+
+---
+
+trust architecture (ZTA) is an enterprise’s cybersecurity plan that utilizes zero trust 
+concepts and encompasses component relationships, workflow planning, and access 
+policies. Therefore, a zero trust enterprise is the network infrastructure (physical and 
+virtual) and operational policies that are in place for an enterprise as a product of a zero 
+trust architecture plan. 
+An enterprise decides to adopt zero trust as its core strategy and generate a zero trust architecture 
+as a plan developed with zero trust principles (see Section 2.1 below) in mind. This plan is then","According to the provided context and graph facts, Zero Trust Architecture treats all networks as untrusted, regardless of whether they are internal or external. The concept of ""zero trust"" implies that no network can be trusted by default, and every access request must be authenticated and authorized on a per-request basis.
+
+In other words, Zero Trust Architecture assumes that any network, including internal networks, can be compromised, and therefore, it applies the same level of scrutiny and verification to all access requests, regardless of their origin. This approach helps to minimize uncertainty and ensure that only authorized users and devices have access to sensitive resources and data.
+
+In this sense, Zero Trust Architecture blurs the traditional distinction between internal and external networks, treating them as equally untrusted and requiring continuous authentication and authorization for access.",0.9999999999666667,1.0,1.0,0.9942979518396196
+What role does micro-segmentation play in a Zero Trust environment?,"NIST SP 800-207  ZERO TRUST ARCHITECTURE 
+   
+6 
+This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-207 
+2.1 Tenets of Zero Trust  
+Many definitions and discussions of ZT stress the concept of removing wide-area perimeter 
+defenses (e.g., enterprise firewalls) as a factor. However, most of these definitions continue to 
+define themselves in relation to perimeters in some way (such as micro-segmentation or micro-
+perimeters; see Section 3.1) as part of the functional capabilities of a ZTA. The following is an
+
+---
+
+3 Logical Components of Zero Trust Architecture ................................................. 9 
+3.1 Variations of Zero Trust Architecture Approaches ........................................ 11 
+3.1.1 ZTA Using Enhanced Identity Governance ........................................ 11 
+3.1.2 ZTA Using Micro-Segmentation ......................................................... 12 
+3.1.3 ZTA Using Network Infrastructure and Software Defined Perimeters . 12 
+3.2 Deployed Variations of the Abstract Architecture .......................................... 13
+
+---
+
+possible.  
+Zero trust provides a set of principles and concepts around moving the PDP/PEPs closer to the 
+resource. The idea is to explicitly authenticate and authorize all subjects, assets and workflows 
+that make up the enterprise. 
+ 
+3 Part of the concepts defined in OASIS XACML 2.0 https://docs.oasis-open.org/xacml/2.0/access_control-xacml-2.0-core-spec-
+os.pdf","According to the provided context, micro-segmentation is mentioned as one of the variations of Zero Trust Architecture approaches in section 3.1.2:
+
+""ZTA Using Micro-Segmentation""
+
+This suggests that micro-segmentation is one possible implementation of Zero Trust Architecture, where resources are divided into smaller segments or zones, and access controls are applied at each segment boundary. This approach aims to limit lateral movement within the network in case of a breach, making it more difficult for attackers to spread laterally across the network.
+
+In this context, micro-segmentation is presented as a means to implement Zero Trust principles by creating smaller, isolated areas within the network, which can be individually controlled and monitored, rather than relying on traditional perimeter-based defenses.",0.99999999995,1.0,1.0,0.9584381183599574
+What are the core components of the Zero Trust logical architecture according to NIST 800-207?,"NIST SP 800-207  ZERO TRUST ARCHITECTURE 
+   
+9 
+This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-207 
+3 Logical Components of Zero Trust Architecture  
+There are numerous logical components that make up a ZTA deployment in an enterprise. These 
+components may be operated as an on-premises service or through a cloud-based service. The 
+conceptual framework model in Figure 2 shows the basic relationship between the components 
+and their interactions. Note that this is an ideal model showing logical components and their
+
+---
+
+NIST SP 800-207  ZERO TRUST ARCHITECTURE 
+   
+4 
+This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-207 
+2 Zero Trust Basics 
+Zero trust is a cybersecurity paradigm focused on resource protection and the premise that trust 
+is never granted implicitly but must be continually evaluated. Zero trust architecture is an end-to-
+end approach to enterprise resource and data security that encompasses identity (person and non-
+person entities), credentials, access management, operations, endpoints, hosting environments,
+
+---
+
+for civilian unclassified systems and provides a road map to migrate and deploy zero trust security 
+concepts to an enterprise environment. SP 800-207 is the product of a collaboration between multiple 
+federal agencies and is overseen by the Federal Chief Information Officer (CIO) Council. NIST is 
+developing and releasing additional ZTA implementation guidance.36 
+Department of Defense Zero Trust Reference Architecture 
+The Department of Defense (DoD)’s Zero Trust Reference Architecture describes data-centric enterprise","According to NIST SP 800-207, the three logical components of Zero Trust Architecture are:
+
+1. **Access Broker**: responsible for authenticating and authorizing requests for access to resources.
+2. **Policy Decision Point (PDP)**: makes decisions based on the results of the authentication and authorization process.
+3. **Data Protection Service (DPS)**: responsible for enforcing access controls and protecting data at rest and in transit.
+
+These components work together to provide an end-to-end approach to enterprise resource and data security, ensuring that trust is never granted implicitly but must be continually evaluated.",0.99999999995,1.0,0.25,0.8641852372207447
+What is the specific role of a Policy Enforcement Point (PEP)?,"NIST SP 800-207  ZERO TRUST ARCHITECTURE 
+   
+10 
+This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-207 
+two logical components. The PA communicates with the PEP when creating the 
+communication path. This communication is done via the control plane.  
+• Policy enforcement point (PEP): This system is responsible for enabling, monitoring, 
+and eventually terminating connections between a subject and an enterprise resource. The 
+PEP communicates with the PA to forward requests and/or receive policy updates from
+
+---
+
+policy engine makes and logs the decision (as approved, or denied), and the policy 
+administrator executes the decision. 
+• Policy administrator (PA): This component is responsible for establishing and/or 
+shutting down the communication path between a subject and a resource (via commands 
+to relevant PEPs). It would generate any session-specific authentication and 
+authentication token or credential used by a client to access an enterprise resource. It is 
+closely tied to the PE and relies on its decision to ultimately allow or deny a session. If
+
+---
+
+NIST SP 800-207  ZERO TRUST ARCHITECTURE 
+   
+5 
+This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-207 
+In the abstract model of access shown in Figure 1, a subject needs access to an enterprise 
+resource. Access is granted through a policy decision point (PDP) and corresponding policy 
+enforcement point (PEP).
+3  
+ 
+ 
+Figure 1: Zero Trust Access 
+The system must ensure that the subject is authentic and the request is valid. The PDP/PEP 
+passes proper judgment to allow the subject to access the resource. This implies that zero trust","According to the provided context, the Policy Enforcement Point (PEP) has the following roles:
+
+* Enabling, monitoring, and eventually terminating connections between a subject and an enterprise resource.
+* Communicates with the Policy Administrator (PA) to forward requests and/or receive policy updates.
+* Makes and logs decisions (approved or denied) based on the policy engine's output.
+* Executes the decision made by the policy administrator.
+
+In summary, the PEP is responsible for enforcing the policies set forth by the Policy Administrator, ensuring that subjects have authorized access to enterprise resources.",0.8333333332916666,1.0,0.8,0.9904588899207845
+What is the function of the Policy Engine (PE) in the trust algorithm?,"The component descriptions: 
+• Policy engine (PE): This component is responsible for the ultimate decision to grant 
+access to a resource for a given subject. The PE uses enterprise policy as well as input 
+from external sources (e.g., CDM systems, threat intelligence services described below) 
+as input to a trust algorithm (see Section 3.3 for more details) to grant, deny, or revoke 
+access to the resource. The PE is paired with the policy administrator component. The 
+policy engine makes and logs the decision (as approved, or denied), and the policy 
+administrator executes the decision.
+
+---
+
+and their interactions. Note that this is an ideal model showing logical components and their 
+interactions. From Figure 1, the policy decision point (PDP) is broken down into two logical 
+components: the policy engine and policy administrator (defined below). The ZTA logical 
+components use a separate control plane to communicate, while application data is 
+communicated on a data plane (see Section 3.4). 
+ 
+ 
+Figure 2: Core Zero Trust Logical Components 
+The component descriptions: 
+• Policy engine (PE): This component is responsible for the ultimate decision to grant
+
+---
+
+policy engine could be an enterprise local asset or a cloud-hosted service. The policy 
+administrator forwards the request to the policy engine for evaluation. If the request is 
+authorized, the policy administrator configures a communication channel between the device 
+agent and the relevant resource gateway via the control plane. This may include information such 
+as an internet protocol (IP) address, port information, session key, or similar security artifacts. 
+The device agent and gateway then connect, and encrypted application/service data flows begin.","According to the provided context, the Policy Engine (PE) is responsible for the ultimate decision to grant access to a resource for a given subject. It uses enterprise policy as well as input from external sources (e.g., CDM systems, threat intelligence services) as input to a trust algorithm to grant, deny, or revoke access to the resource.",0.9999999999666667,1.0,1.0,0.8144813114599571
+How should access to individual enterprise resources be granted in ZTA?,"accessible to other agencies or the public. This corresponds with the cross-enterprise 
+collaboration ZTA use case (see Section 4.4). Agencies using a ZTA for these assets may need to 
+take collaboration or publication requirements into account when developing the strategy. 
+  
+ 
+8 Federal Cloud Computing Strategy: https://cloud.cio.gov/strategy/  
+9 Federal Data Strategy: https://strategy.data.gov/
+
+---
+
+administrator accounts. 
+5.6 Reliance on Proprietary Data Formats or Solutions 
+ZTA relies on several different data sources to make access decisions, including information 
+about the requesting subject, asset used, enterprise and external intelligence, and threat analysis. 
+Often, the assets used to store and process this information do not have a common, open standard 
+on how to interact and exchange information. This can lead to instances where an enterprise is 
+locked into a subset of providers due to interoperability issues. If one provider has a security
+
+---
+
+NIST SP 800-207  ZERO TRUST ARCHITECTURE 
+   
+36 
+This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-207 
+7 Migrating to a Zero Trust Architecture 
+Implementing a ZTA is a journey rather than a wholesale replacement of infrastructure or 
+processes. An organization should seek to incrementally implement zero trust principles, process 
+changes, and technology solutions that protect its highest value data assets. Most enterprises will 
+continue to operate in a hybrid zero-trust/perimeter-based mode for an indefinite period while","Based on the provided context and graph facts, I can infer that in a Zero Trust Architecture (ZTA), access to individual enterprise resources should be granted based on the following principles:
+
+1. **Least Privilege**: Grant access only to the minimum necessary resources required by the requesting subject, ensuring that users and devices have the least privilege possible to perform their tasks.
+2. **Just-In-Time (JIT) Authorization**: Verify the identity and authorization of the requesting subject at the time of access request, rather than relying on static permissions or group membership.
+3. **Continuous Monitoring**: Continuously monitor the behavior and activity of the requesting subject during the session, re-evaluating their privileges and access rights as needed.
+4. **Context-Aware Access Control**: Consider various contextual factors, such as the type of resource being accessed, the device and network location, and the presence of malware or other threats, when making access decisions.
+
+These principles aim to ensure that access to enterprise resources is granted in a secure, flexible, and adaptive manner, minimizing the risk of unauthorized access and data breaches.
+
+Please note that this advice is based solely on the provided context and graph facts, and may not reflect the full scope of best practices or regulatory requirements for implementing a Zero Trust Architecture.",0.3333333333,1.0,1.0,0.7643612867499208
+Why is device posture evaluation important before granting access to a resource?,"5. The enterprise monitors and measures the integrity and security posture of all 
+owned and associated assets. No asset is inherently trusted. The enterprise evaluates the 
+security posture of the asset when evaluating a resource request. An enterprise 
+implementing a ZTA should establish a continuous diagnostics and mitigation (CDM) or 
+similar system to monitor the state of devices and applications and should apply 
+patches/fixes as needed. Assets that are discovered to be subverted, have known 
+vulnerabilities, and/or are not managed by the enterprise may be treated differently
+
+---
+
+technical security posture of organizations and facilities and include visual, electronic, and 
+physical examinations of surveyed facilities, internally and externally. The surveys also provide 
+useful input for risk assessments and information regarding organizational exposure to potential 
+adversaries. 
+Related Controls:  None. 
+Control Enhancements:  None. 
+References:  None.
+
+---
+
+strives to achieve a balance of security, availability, usability, and cost-efficiency. 
+7. The enterprise collects as much information as possible about the current state of 
+assets, network infrastructure and communications and uses it to improve its 
+security posture. An enterprise should collect data about asset security posture, network 
+traffic and access requests, process that data, and use any insight gained to improve 
+policy creation and enforcement. This data can also be used to provide context for access 
+requests from subjects (see Section 3.3.1).","According to the provided context, device posture evaluation is important because ""No asset is inherently trusted."" In other words, every device must be evaluated based on its current security posture before being granted access to a resource. This ensures that only devices with an acceptable level of security are allowed to access sensitive resources, thereby reducing the risk of unauthorized access and potential breaches.",0.9999999999,1.0,1.0,0.8907372733471778
+How does Zero Trust apply the principle of least privilege?,"possible.  
+Zero trust provides a set of principles and concepts around moving the PDP/PEPs closer to the 
+resource. The idea is to explicitly authenticate and authorize all subjects, assets and workflows 
+that make up the enterprise. 
+ 
+3 Part of the concepts defined in OASIS XACML 2.0 https://docs.oasis-open.org/xacml/2.0/access_control-xacml-2.0-core-spec-
+os.pdf
+
+---
+
+perimeterization evolved and improved into the larger concept of zero trust, which was later 
+coined by John Kindervag
+1 while at Forrester.2 Zero trust then became the term used to describe 
+various cybersecurity solutions that moved security away from implied trust based on network 
+location and instead focused on evaluating trust on a per-transaction basis. Both private industry 
+and higher education have also undergone this evolution from perimeter-based security to a 
+security strategy based on zero trust principles.
+
+---
+
+1.2 Structure of This Document ............................................................................ 2 
+2 Zero Trust Basics ................................................................................................... 4 
+2.1 Tenets of Zero Trust ....................................................................................... 6 
+2.2 A Zero Trust View of a Network ...................................................................... 8 
+3 Logical Components of Zero Trust Architecture ................................................. 9","Based on the provided context and graph facts, I can infer that Zero Trust applies the principle of least privilege through its core tenet of ""never trust"" or ""trust no one"". This means that every access request is evaluated on a per-transaction basis, and only the minimum necessary privileges are granted to the requesting subject (e.g., user, device, application).
+
+In other words, Zero Trust architecture assumes that no entity should be trusted implicitly, and instead, each request must be authenticated, authorized, and validated before granting access to resources. This approach ensures that only the required permissions are granted, minimizing the attack surface and reducing the risk of unauthorized access.
+
+By applying the principle of least privilege, Zero Trust reduces the likelihood of lateral movement and minimizes the damage caused by potential breaches. It also enables more granular control over access to sensitive resources, allowing organizations to better manage risk and maintain compliance with regulatory requirements.",0.49999999995,1.0,1.0,0.7718908353141906
